@@ -19,7 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="android.coolweather.com.android.WeatherActivity"></activity>
+        <activity android:name="android.coolweather.com.android.WeatherActivity" />
+
+        <service
+            android:name="android.coolweather.com.android.service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
